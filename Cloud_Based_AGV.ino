@@ -44,7 +44,7 @@ const char* ssid = "CAISER";
 const char* password =  "caiser123";
 
 // URL link to Post Ultrasonic
-String serverName = "http://thingssentral.io/postlong?data=AccessKey|AMZIE2021@0019001010103|";
+String serverName = //API to send data;
 
 unsigned long lastTime = 0;
 // Set timer to 5 seconds (5000)
@@ -297,7 +297,7 @@ void loop()
 
     HTTPClient http;
 
-    http.begin("http://thingssentral.io/ReadNode?Params=tokenid|xxx@NodeId|0019001010102"); //Specify the URL
+    http.begin(//API to read data); //Specify the URL
     int httpCode = http.GET();                                        //Make the request
 
     if (httpCode > 0)
