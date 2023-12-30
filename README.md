@@ -11,3 +11,5 @@ Software used:
 3. Arduino
 4. Solidity
 5. Web API
+
+Note: This is just a framework used for my master's research, you can use other software as well.
