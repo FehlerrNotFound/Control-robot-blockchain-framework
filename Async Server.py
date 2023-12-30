@@ -6,7 +6,7 @@ from solcx import compile_standard, install_solc
 import socket
 import datetime
 
-contract_path = 'C:/Users/amzie/Downloads/SimpleSmartContract.sol'
+contract_path = 'Your contract path'
 api_key = None
 
 
@@ -114,7 +114,7 @@ async def handle_client(client_socket, client_address, w3, contract_instance):
 
 # Create an asyncio coroutine to start the server
 async def start_server(loop, w3, contract_instance):
-    server_address = ('127.0.0.1', 12345)
+    server_address = (//port, //password)
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server_socket.bind(server_address)
     server_socket.listen()
@@ -143,7 +143,7 @@ if __name__ == "__main__":
 
     compiled_solidity = compile_contract(contract_file)
 
-    provider_url = 'https://goerli.infura.io/v3/bacca2a3a6fd42a19cd6f0b674e24fa3'
+    provider_url = //provider url
     w3 = Web3(Web3.HTTPProvider(provider_url))
 
     abi = compiled_solidity['contracts']['SimpleSmartContract.sol']['HelloWorld']['abi']
@@ -151,8 +151,8 @@ if __name__ == "__main__":
 
     SmartContract = w3.eth.contract(abi=abi, bytecode=bytecode)
 
-    chain_id = 5
-    wallet = "0x1c949A949c5d436aceA531b415CE092698406978"
+    chain_id = //chain id
+    wallet = //crypto wallet
     nonce = w3.eth.get_transaction_count(wallet)
 
     transaction = build_transaction(w3, SmartContract, chain_id, wallet, nonce)
