@@ -14,4 +14,5 @@ Software used:
 
 Note: This is just a framework used for my master's research, you can use other software as well.
 
-![image](https://github.com/FehlerrNotFound/Control-robot-blockchain-framework/assets/111520309/bf2eaf38-e7de-4c28-8d4b-9f4742d0bad8)
+![image](https://github.com/FehlerrNotFound/Control-robot-blockchain-framework/assets/111520309/01285f8c-c19b-4478-8e7a-8fc48988863d)
+
